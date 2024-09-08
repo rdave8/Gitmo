@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: GitmoIndexer
+networks:
+- id: 11155111
+  start_block: 0
+  contracts:
+  - name: GitmoVault
+    address:
+    - 0xe5e711087Fa04d843c1fc39202f71558DE1247B5
+    handler: src/EventHandlers.ts
+    events:
+    - event: Claimed(string indexed username, uint256 indexed value)
+    - event: Donated(string indexed username, uint256 indexed value)
+rollback_on_reorg: false
