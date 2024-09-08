@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       envio:
-        specifier: 2.2.2
-        version: 2.2.2
+        specifier: 2.2.0
+        version: 2.2.0
     optionalDependencies:
       generated:
         specifier: ./generated
@@ -40,6 +40,19 @@ importers:
       typescript:
         specifier: 5.2.2
         version: 5.2.2
+
+  contracts:
+    dependencies:
+      '@openzeppelin/contracts':
+        specifier: ^5.0.1
+        version: 5.0.2
+      '@zk-email/contracts':
+        specifier: ^6.1.5
+        version: 6.1.5
+    devDependencies:
+      forge-std:
+        specifier: github:foundry-rs/forge-std#v1.8.1
+        version: https://codeload.github.com/foundry-rs/forge-std/tar.gz/bb4ceea94d6f10eeb5b41dc2391c6c8bf8e734ef
 
   generated:
     dependencies:
@@ -213,6 +226,9 @@ packages:
     resolution: {integrity: sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg==}
     engines: {node: '>=8.0.0'}
 
+  '@openzeppelin/contracts@5.0.2':
+    resolution: {integrity: sha512-ytPc6eLGcHHnapAZ9S+5qsdomhjo6QBHTDRRBFfTxXIpsicMhVPouPgmUPebZZZGX7vt9USA+Z+0M0dSVtSUEA==}
+
   '@rescript/react@0.12.1':
     resolution: {integrity: sha512-ZD7nhDr5FZgLYqRH9s4CNM+LRz/3IMuTb+LH12fd2Akk0xYkYUP+DZveB2VQUC2UohJnTf/c8yPSNsiFihVCCg==}
     peerDependencies:
@@ -260,6 +276,9 @@ packages:
 
   '@types/yoga-layout@1.9.2':
     resolution: {integrity: sha512-S9q47ByT2pPvD65IvrWp7qppVMpk9WGMbVq9wbWZOHg6tnXSD4vyhao6nOSBwwfDdV2p3Kx9evA9vI+XWTfDvw==}
+
+  '@zk-email/contracts@6.1.5':
+    resolution: {integrity: sha512-1RW3dpYGBQXjmIlcTGMtYsux7FQoR1MezA0D0pssrNEaCO2CuQd6oAxJLpbCxFQWPbujLKn8PiEVcjP+eiGvVw==}
 
   abitype@1.0.5:
     resolution: {integrity: sha512-YzDhti7cjlfaBhHutMaboYB21Ha3rXR9QTkNJFzYC4kC8YclaiwPBBBJY8ejFdu2wnJeZCVZSMlQJ7fi8S6hsw==}
@@ -559,28 +578,28 @@ packages:
   end-of-stream@1.4.4:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
 
-  envio-darwin-arm64@2.2.2:
-    resolution: {integrity: sha512-/rJsc13LwbPK41uBw9RSZk+2cLIaKJmwK1ozw8qnhZWRWZjOpIDHxmOU4dAUGJmasj9LcROB4c2XKmvJeuZAcQ==}
+  envio-darwin-arm64@2.2.0:
+    resolution: {integrity: sha512-K8JUYhty0bA1VwgmeE9FrBBOYwKE9QljO1WZVdATEEmFIPcSLwnsVBTHVHjEArKfU1nTFgKzuNv5igIIvZAvMw==}
     cpu: [arm64]
     os: [darwin]
 
-  envio-darwin-x64@2.2.2:
-    resolution: {integrity: sha512-wJto4CT5gHjxdTeBIwoqgkDfe6lL0bx8Wm22jZiEtyMM4VsS8t3l7zSL70CW3zIW8K+6Y1bG6+B/akkSBPD4ZA==}
+  envio-darwin-x64@2.2.0:
+    resolution: {integrity: sha512-UA70eN6+4H4fANltjANXL7yS7OLbRF8dVXSLL9Dc0GZSRGGcr0z8Qa7Wfxt9vht7YSH6fPoN8I6KPnaUbbz3tA==}
     cpu: [x64]
     os: [darwin]
 
-  envio-linux-arm64@2.2.2:
-    resolution: {integrity: sha512-5ZAFsDC+M3WdIifWCNyOj6jbg5IkScq3ve0snQ5sjhYW0K9UMNxgh3LkCsZnCELAHJFkmSlSW2EoqJYHkcsOpQ==}
+  envio-linux-arm64@2.2.0:
+    resolution: {integrity: sha512-dGJT64Uas+Jl5rXx1EvRpUmKOm1DIt8KfkQll4RDBRwU6ROX5/CYLmbT3FQHxwsRpyflaqzNv1oWKbpCiSOc3Q==}
     cpu: [arm64]
     os: [linux]
 
-  envio-linux-x64@2.2.2:
-    resolution: {integrity: sha512-3rxh7XJRPY3mshk+C/N8P5EUgOjr+1Y7Wi6zMbA0+7CQoOEORY83R1tb/s2h4BZzFSkijXfvb3Gt32VzzOWlDw==}
+  envio-linux-x64@2.2.0:
+    resolution: {integrity: sha512-1U+X7z6Wuhly2btkCsFshHESnA1Hv3tsK30tZhqGv9+/Lw/hCxTRy9MdzxX/Tbnq/kCKQp0/iRRf+MurE8olqA==}
     cpu: [x64]
     os: [linux]
 
-  envio@2.2.2:
-    resolution: {integrity: sha512-cJ6KYQxMRBfB58pyGFNd8B+GYpQoDZq6b0d/00xaXPb6tDKBZ8opOOI2lOY4s6c3wQYgXoVFvjqjJDWo2qMzFw==}
+  envio@2.2.0:
+    resolution: {integrity: sha512-uIZap6vAWPdAwchbcT1sG9rV0LjHew149cRXoD/o48g8naSbvfCCtw0OlxT26f6USK3TfxZAB/qf9+QGApKljg==}
     hasBin: true
 
   es-define-property@1.0.0:
@@ -661,6 +680,10 @@ packages:
   flat@5.0.2:
     resolution: {integrity: sha512-b6suED+5/3rTpUBdG1gupIl8MPFCAMA0QXwmljLhvCUKcUvdE4gWky9zpuGCcXHOsz4J9wPGNWq6OKpmIzz3hQ==}
     hasBin: true
+
+  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/bb4ceea94d6f10eeb5b41dc2391c6c8bf8e734ef:
+    resolution: {tarball: https://codeload.github.com/foundry-rs/forge-std/tar.gz/bb4ceea94d6f10eeb5b41dc2391c6c8bf8e734ef}
+    version: 1.7.6
 
   forwarded@0.2.0:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
@@ -1622,6 +1645,8 @@ snapshots:
 
   '@opentelemetry/api@1.9.0': {}
 
+  '@openzeppelin/contracts@5.0.2': {}
+
   '@rescript/react@0.12.1(react-dom@18.3.1(react@18.2.0))(react@18.2.0)':
     dependencies:
       react: 18.2.0
@@ -1664,6 +1689,11 @@ snapshots:
       undici-types: 5.25.3
 
   '@types/yoga-layout@1.9.2': {}
+
+  '@zk-email/contracts@6.1.5':
+    dependencies:
+      '@openzeppelin/contracts': 5.0.2
+      dotenv: 16.4.5
 
   abitype@1.0.5(typescript@5.2.2):
     optionalDependencies:
@@ -1932,24 +1962,24 @@ snapshots:
     dependencies:
       once: 1.4.0
 
-  envio-darwin-arm64@2.2.2:
+  envio-darwin-arm64@2.2.0:
     optional: true
 
-  envio-darwin-x64@2.2.2:
+  envio-darwin-x64@2.2.0:
     optional: true
 
-  envio-linux-arm64@2.2.2:
+  envio-linux-arm64@2.2.0:
     optional: true
 
-  envio-linux-x64@2.2.2:
+  envio-linux-x64@2.2.0:
     optional: true
 
-  envio@2.2.2:
+  envio@2.2.0:
     optionalDependencies:
-      envio-darwin-arm64: 2.2.2
-      envio-darwin-x64: 2.2.2
-      envio-linux-arm64: 2.2.2
-      envio-linux-x64: 2.2.2
+      envio-darwin-arm64: 2.2.0
+      envio-darwin-x64: 2.2.0
+      envio-linux-arm64: 2.2.0
+      envio-linux-x64: 2.2.0
 
   es-define-property@1.0.0:
     dependencies:
@@ -2059,6 +2089,8 @@ snapshots:
       path-exists: 4.0.0
 
   flat@5.0.2: {}
+
+  forge-std@https://codeload.github.com/foundry-rs/forge-std/tar.gz/bb4ceea94d6f10eeb5b41dc2391c6c8bf8e734ef: {}
 
   forwarded@0.2.0: {}
 
