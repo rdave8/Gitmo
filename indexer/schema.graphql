@@ -1,0 +1,12 @@
+type GitmoVault_Claimed {
+  id: ID!
+  username: String!
+  value: BigInt!
+}
+
+type GitmoVault_Donated {
+  id: ID!
+  username: String!
+  value: BigInt!
+}
+
