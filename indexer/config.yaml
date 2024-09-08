@@ -6,7 +6,7 @@ networks:
   contracts:
   - name: GitmoVault
     address:
-    - 0xe5e711087Fa04d843c1fc39202f71558DE1247B5
+    - 0xd1eD05cAF3F6ae6FF7d0eD10c330427b988E4Ea8
     handler: src/EventHandlers.ts
     events:
     - event: Claimed(string indexed username, uint256 indexed value)
